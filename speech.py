@@ -8,7 +8,7 @@ import os
 def synthesize(output, text):
 	url = 'https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize'
 	headers = {
-	'Authorization': 'Api-Key ' + 'AQVNzkfa052DgfDgk7isPgb_JMMYF2MMcxsaPJrK',
+	'Authorization': 'Api-Key ' + '',
 	}
 
 	data = {
