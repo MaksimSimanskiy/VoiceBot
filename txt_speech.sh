@@ -15,7 +15,7 @@ json='{"text": "'"$1"'","output_audio_spec":{
 
 echo $json | \
 jq -c '.' | \
-~/go/bin/grpcurl -H "Authorization: Api-Key AQVNzkfa052DgfDgk7isPgb_JMMYF2MMcxsaPJrK" \
+~/go/bin/grpcurl -H "Authorization: Api-Key Key" \
         -d @ tts.api.cloud.yandex.net:443 speechkit.tts.v3.Synthesizer/UtteranceSynthesis | \
 jq -r '.audioChunk.data' | base64 -d > /tmp/$2$2.wav
 sox -r 8000 -t raw -e signed-integer -b 16 -c 1 /tmp/$2$2.wav /tmp/$2.wav
