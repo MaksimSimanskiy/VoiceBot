@@ -35,14 +35,6 @@ except FileNotFoundError:
 	print("none",end="")
 	sys.exit()
 
-conn = psycopg2.connect(
-    dbname="maksimsima",
-    user="maksimsima",
-    password="Maks1999",
-    host="pg3.sweb.ru",
-    port="5432"
-)
-
 cur = conn.cursor()
 
 # Переменная lid
