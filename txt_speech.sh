@@ -11,7 +11,7 @@ json='{"text": "'"$1"'","output_audio_spec":{
         "audioEncoding": "LINEAR16_PCM",
         "sampleRateHertz": 8000
       }
-    }, "hints": [{"speed": 1}, {"voice": "b1gs9a5ant07jps2s9d8"}]}'
+    }, "hints": [{"speed": 1}, {"voice": "brandvoice"}]}'
 
 echo $json | \
 jq -c '.' | \
